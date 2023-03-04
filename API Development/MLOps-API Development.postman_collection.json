@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "ec30110c-c667-4918-a650-21cddd9ee42a",
+		"name": "MLOps-API Development",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8192984"
+	},
+	"item": [
+		{
+			"name": "Create a product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\":\"product 2\",\r\n  \"description\":\"Lorem ipsum dolor sit amet\",\r\n  \"price\":50000,\r\n  \"qty\":250\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/product",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/product",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict using model",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"Age\":40,\r\n    \"Sex\":\"male\",\r\n    \"Embarked\":\"C\"\r\n    },\r\n\r\n    {\r\n    \"Age\":30,\r\n    \"Sex\":\"female\",\r\n    \"Embarked\":\"Q\"\r\n    },\r\n\r\n    {\r\n    \"Age\":10,\r\n    \"Sex\":\"male\",\r\n    \"Embarked\":\"S\"\r\n    },\r\n\r\n    {\r\n    \"Age\":20,\r\n    \"Sex\":\"female\",\r\n    \"Embarked\":\"S\"\r\n    },\r\n\r\n    {\r\n    \"Age\":35,\r\n    \"Sex\":\"female\",\r\n    \"Embarked\":\"C\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/predict",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
