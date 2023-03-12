@@ -9,6 +9,5 @@ marshmallow-sqlalchemy
 sentry-sdk==1.5.0
 blinker==1.4
 
-
 # Model Tracking with MLFLow
 mlflow
