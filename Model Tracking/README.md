@@ -83,7 +83,7 @@ It provides
 - annotations
 
 ## 2. Getting started with MLFlow
-Example of code snippet of using MLFlow
+Example of code snippet to run MLFlow:
 ```
 mlflow ui --backend-store-uri sqlite:///mlflow.db
 ```
